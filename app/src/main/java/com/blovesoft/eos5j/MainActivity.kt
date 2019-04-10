@@ -2,6 +2,7 @@ package com.blovesoft.eos5j
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
+import android.util.Log
 
 import com.blovesoft.eos5j.Constant.URL
 import io.eblock.eos4j.Rpc
@@ -15,12 +16,12 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
         GlobalScope.launch {
             var rpc = Rpc(URL)
-            //val chainInfo = rpc.chainInfo
-           // Log.e("data", chainInfo.toString())
+//            val chainInfo = rpc.chainInfo
+//            Log.e("data", chainInfo.toString())
 
             //查询账户信息
-           //val currencyBalance = rpc.getAccount("123455432113")
-           // Log.e("data", currencyBalance.toString())
+           val currencyBalance = rpc.getAccount("123455432113")
+            Log.e("data", currencyBalance.toString())
             //创建账号
 //            try {
 //                val  createAccount = rpc.createAccount(
