@@ -1,4 +1,4 @@
-# Eos%j
+# Eos5j
 操作eos的库，让操作更简单
 [![](https://jitpack.io/v/githubityu/Eos5j.svg)](https://jitpack.io/#githubityu/Eos5j)
 ## 目录
